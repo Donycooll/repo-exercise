@@ -1,2 +1,3 @@
 # repo-exercise
-exercise git 
+exercise git
+new lie
