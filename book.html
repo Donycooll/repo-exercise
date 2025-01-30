@@ -37,15 +37,29 @@
                     <option value="Marawi">Marawi</option>
                 </datalist>
             </div>
+            <br>
             <div>
-                <label for="booking_delivery">Booking Delivery</label>
-                <input id="booking_delivery" name="booking_delivery" list="booking_del">
-                <datalist id="booking_del">
-                    <option value="indoor">indoor</option>
-                    <option value="outdoor">outdoor</option>
-                    <option value="pickup">pickup</option>
-                </datalist>
+                <label>Spicy Or Not</label>
+                <fieldset id="spicy">
+                    <input type="radio" name="spicy" id="spicy1" value="spicy">
+                    <label for="spicy1">Spicy</label>
+
+                    <input type="radio" name="spicy" id="spicy2" value="not spicy" checked>
+                    <label for="spicy2">Not Spicy</label>
+                </fieldset>
             </div>
+            <br>
+            <div>
+                <label>Delivery Option</label>
+                <fieldset id="delivery_option">
+                    <input type="radio" name="delivery_option" id="delivery_option1" value="indoor">
+                    <label for="delivery_option1">Indoor</label>
+
+                    <input type="radio" name="delivery_option" id="delivery_option2" value="outdoor" checked>
+                    <label for="delivery_option2">Outdoor</label>
+                </fieldset>
+            </div>
+            <br>
             <button type="submit">Book Now</button>
         </form>
     </main>
