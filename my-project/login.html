@@ -25,10 +25,20 @@
     <main>
         <div class="container">
             <div class="landing">
-                <h1>One touch away</h1>
-                <h2>From booking your appointment</h2>
-                <p>Browse doctors list based on specialty and location <br> and book your appointment directly.</p>
-                <button class="book-now">Book Now</button>
+                <div class="window">
+                    <h1>Log in</h1>
+                    <form method="post">
+                        <input type="email" name="userName" id="userName" required placeholder="Enter your Email">
+                        <br>
+                        <input type="password" name="pwd" id="pwd" required placeholder="Enter your Password">
+                        <br>
+                        <button type="submit" class="logIn-button">Log in</button>
+                    </form>
+                    <div class="options">
+                       <a href="#" class="forgot">Forgot password ?</a>
+                       <a href="signup.html" class="signUp">Sign up</a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

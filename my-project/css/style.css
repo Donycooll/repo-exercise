@@ -9,6 +9,7 @@
 :root {
     font-family: Arial, Helvetica, sans-serif;
     --main-color : lightblue;
+    --fade-color : #add8e6c7;
 }
 
 .container {
@@ -20,6 +21,12 @@ header .container {
     justify-content: space-between;
     background-color: var(--main-color);
     border-radius: 10px;
+}
+
+.logo-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
@@ -49,6 +56,9 @@ main .container {
     background-repeat: no-repeat;
     border-radius: 10px;
     color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 .landing {
@@ -60,9 +70,15 @@ main .container {
     height: calc(100vb - 90px);
 }
 
+.signup {
+    height: auto;
+    width: 80%;
+}
+
 .landing h1 {
     font-size: 80px;
     margin: 40px 0 0px;
+    text-transform: uppercase;
 }
 
 .landing h2 {
@@ -84,6 +100,7 @@ main .container {
     padding: 10px 30px;
     border-radius: 10px;
     cursor: pointer;
+    border: 1px solid;
 }
 
 footer .container{
@@ -104,4 +121,47 @@ footer .social-accounts {
 
 .social-accounts li a {
     color: white;
+}
+
+.window {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--fade-color);
+    padding: 20px 90px;
+    border-radius: 10px;
+}
+
+.window h1 {
+    margin: 0 0 60px;
+    text-transform: uppercase;
+}
+
+.window form {
+    margin-bottom: 20px; 
+}
+
+form input {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.options {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options a {
+    color: white;
+}
+
+.signup-option {
+    justify-content: center;
 }
